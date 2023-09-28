@@ -1,9 +1,15 @@
 public class Hello {
     public static void main(String[] args) {
+        // Detect o`s in hello world
+        String helloWorld = "Hello World...";
+        int detected = 0;
 
-        for(int i=1;i<=12;i++) {
-
-            System.out.println("Hello World..."+i);
+        for (int i = 0; i < helloWorld.length(); i++) {
+            if (helloWorld.charAt(i) == 'H') {
+                detected++;
+            }
         }
+
+        System.out.println(detected + " h`s are detected");
     }
 }
